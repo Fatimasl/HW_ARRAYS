@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 public class StatsServiceTest {
 
     @Test
-    void SumOfSalesTest(){
+    void SumOfSalesTest() {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -17,7 +17,7 @@ public class StatsServiceTest {
     }
 
     @Test
-    void AverageSumOfSalesTest(){
+    void AverageSumOfSalesTest() {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -28,7 +28,7 @@ public class StatsServiceTest {
     }
 
     @Test
-    void AverageSumOfSalesLengthZeroTest(){
+    void AverageSumOfSalesLengthZeroTest() {
         StatsService service = new StatsService();
 
         long[] sales = new long[0];
@@ -39,7 +39,7 @@ public class StatsServiceTest {
     }
 
     @Test
-    void MaxMonthOfSalesTest(){
+    void MaxMonthOfSalesTest() {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -50,7 +50,7 @@ public class StatsServiceTest {
     }
 
     @Test
-    void MinMonthOfSalesTest(){
+    void MinMonthOfSalesTest() {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -61,7 +61,7 @@ public class StatsServiceTest {
     }
 
     @Test
-    void AmountOfMonthUnderAverageSalesTest(){
+    void AmountOfMonthUnderAverageSalesTest() {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -72,7 +72,7 @@ public class StatsServiceTest {
     }
 
     @Test
-    void AmountOfMonthOverAverageSalesTest(){
+    void AmountOfMonthOverAverageSalesTest() {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
