@@ -11,7 +11,7 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 180;
-        long actual = service.SumOfSales(sales);
+        long actual = service.sumOfSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -22,7 +22,7 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 15;
-        long actual = service.AverageSumOfSales(sales);
+        long actual = service.averageSumOfSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -33,7 +33,7 @@ public class StatsServiceTest {
 
         long[] sales = new long[0];
         long expected = 0;
-        long actual = service.AverageSumOfSales(sales);
+        long actual = service.averageSumOfSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -44,7 +44,7 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 8;
-        long actual = service.MaxMonthOfSales(sales);
+        long actual = service.maxMonthOfSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -55,7 +55,7 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 9;
-        long actual = service.MinMonthOfSales(sales);
+        long actual = service.minMonthOfSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -66,7 +66,7 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
-        long actual = service.AmountOfMonthUnderAverageSales(sales);
+        long actual = service.amountOfMonthUnderAverageSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -77,7 +77,7 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
-        long actual = service.AmountOfMonthOverAverageSales(sales);
+        long actual = service.amountOfMonthOverAverageSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
